@@ -6,15 +6,14 @@ var winResizeHandler = function () {
 	var w= $('.cell').width();
  
 	$('.cell').height(w).css({
-		'font-size':w+'px',
-		'line-height':w*0.9+'px'
+		'font-size':w*0.9+'px',
+		'line-height':w+'px'
 	});
-	$('.mark').css({
+	$('.mark,.arrow').css({
 		'font-size':w*0.8+'px'
 	});
-	
-	$('.title').css({
-		'font-size':w*0.5+'px'
+	 $('.title').css({
+		'font-size':w*0.2+'px'
 	});
 	 
  	
@@ -33,7 +32,7 @@ winResizeHandler();
 var currentStep=0;
 var gameOver=true;
 var currentState=[];
-var symbols = ['&times;','&#9675;'];
+var symbols = ['X','O'];
 var winner;
 var winningCombos={
 	combo0:[0,1,2],
@@ -62,11 +61,17 @@ var showmark = function (p) {
 	if (p % 2===0) {
 		$('.player2>.mark').removeClass('select');
 		$('.player1>.mark').addClass('select');
+
+		$('.player1>.arrow').removeClass('select');
+		$('.player2>.arrow').addClass('select');
  
 	}else{
 		 
 		$('.player1>.mark').removeClass('select');
 		$('.player2>.mark').addClass('select');
+
+		$('.player2>.arrow').removeClass('select');
+		$('.player1>.arrow').addClass('select');
 
 	}
 };
