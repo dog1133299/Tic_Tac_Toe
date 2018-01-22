@@ -1,5 +1,7 @@
 # Tic_Tac_Toe
-Tic_Tac_Toe game in javascript
+Tic_Tac_Toe game in jQuery
+
+(Native Javascript version please check branch)
 
 Game in https://dog1133299.github.io/Tic_Tac_Toe/
 
