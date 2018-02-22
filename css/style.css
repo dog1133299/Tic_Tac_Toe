@@ -79,15 +79,13 @@
    			-ms-transform: translate(-50%,-50%);
 		        transform: translate(-50%,-50%);
 	}
-.msg{
- 	width: 100%;
- 	position: absolute;
+.bottommsg{ 
+ 	position: absolute; 
  	bottom: 0;
- 	color: white;
- 	text-align: center;
+ 	color: grey; 
  	font-family: 'Square721 BT','Montserrat', sans-serif;
  	font-size: 20px;
  }
- .msg>a{
+ .bottommsg>a{
  	text-decoration: none; 
  }	
